@@ -208,7 +208,7 @@ body {
   }
 
   to {
-    background-position: 10000px 0;
+    background-position: -10000px 0;
   }
 }
 
@@ -316,10 +316,26 @@ body {
 
 .character {
   position: absolute;
-  top: 50%;
-  left: 20%;
-  width: 100px;
-  height: 200px;
-  background-color: #503613;
+  top: 46%;
+  left: 15%;
   z-index: -6;
+  animation: character-animation 1s linear infinite;
+}
+
+.character img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes character-animation {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
