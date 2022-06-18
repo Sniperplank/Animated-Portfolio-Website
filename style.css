@@ -5,6 +5,8 @@
   --curtain-animation-delay: 4s;
   --movement-animation-delay: 0s;
   --text-on-curtain-color: #c814ff;
+  --clr-neon: rgb(83, 20, 255);
+  --clr-bg: rgb(32, 33, 49);
 }
 
 body {
@@ -295,7 +297,7 @@ body {
 .wall {
   background: transparent url(wall.png) repeat-x top center;
   position: absolute;
-  top: 60%;
+  top: 35%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -332,10 +334,97 @@ body {
   from {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-5px);
   }
+
   to {
     transform: translateY(0);
   }
+}
+
+.homeButton {
+  position: absolute;
+  top: 30%;
+  animation: button-animation 35s linear infinite;
+  animation-delay: var(--movement-animation-delay);
+}
+
+.projectsButton {
+  position: absolute;
+  top: 30%;
+  visibility: hidden;
+  animation: button-animation 35s linear infinite;
+  animation-delay: 5s;
+}
+
+.aboutButton {
+  position: absolute;
+  top: 30%;
+  visibility: hidden;
+  animation: button-animation 35s linear infinite;
+  animation-delay: 10s;
+}
+
+.contactButton {
+  position: absolute;
+  top: 30%;
+  visibility: hidden;
+  animation: button-animation 35s linear infinite;
+  animation-delay: 15s;
+}
+
+@keyframes button-animation {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-10vw);
+  }
+}
+
+.neon-button {
+  font-size: 1.5rem;
+
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 1em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+  left: 60%;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  border-radius: 1em;
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
 }
