@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
   --text-color: white;
   --curtain-animation-delay: 4s;
   --movement-animation-delay: 0s;
   --text-on-curtain-color: #c814ff;
-  --clr-neon: rgb(83, 20, 255);
+  --clr-neon: rgb(74, 67, 173);
   --clr-bg: rgb(32, 33, 49);
 }
 
@@ -15,6 +15,7 @@ body {
   height: 100vh;
   color: var(--text-color);
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 [class*=curtain] {
@@ -65,6 +66,8 @@ body {
     opacity: 0.5;
   }
 }
+
+/* NAME ON CURTAINS */
 
 .textOnCurtain-div {
   font-family: 'Courier New', Monospace;
@@ -137,6 +140,8 @@ body {
     width: 100%;
   }
 }
+
+/* SKY */
 
 .sky {
   position: absolute;
@@ -213,6 +218,8 @@ body {
     background-position: -10000px 0;
   }
 }
+
+/* MOON */
 
 .moon {
   position: absolute;
@@ -294,6 +301,8 @@ body {
   box-shadow: inset 3px -1px 0 0px #414043;
 }
 
+/* WALL */
+
 .wall {
   background: transparent url(wall.png) repeat-x top center;
   position: absolute;
@@ -315,6 +324,8 @@ body {
     background-position: -10000px 0;
   }
 }
+
+/* WALKING CHARACTER */
 
 .character {
   position: absolute;
@@ -344,10 +355,12 @@ body {
   }
 }
 
+/* NAVIGATION BUTTONS */
+
 .homeButton {
   position: absolute;
   top: 30%;
-  animation: button-animation 35s linear infinite;
+  animation: button-animation 33s linear infinite;
   animation-delay: var(--movement-animation-delay);
 }
 
@@ -355,7 +368,7 @@ body {
   position: absolute;
   top: 30%;
   visibility: hidden;
-  animation: button-animation 35s linear infinite;
+  animation: button-animation 33s linear infinite;
   animation-delay: 5s;
 }
 
@@ -363,7 +376,7 @@ body {
   position: absolute;
   top: 30%;
   visibility: hidden;
-  animation: button-animation 35s linear infinite;
+  animation: button-animation 33s linear infinite;
   animation-delay: 10s;
 }
 
@@ -371,7 +384,7 @@ body {
   position: absolute;
   top: 30%;
   visibility: hidden;
-  animation: button-animation 35s linear infinite;
+  animation: button-animation 33s linear infinite;
   animation-delay: 15s;
 }
 
@@ -379,6 +392,7 @@ body {
   from {
     transform: translateX(100vw);
   }
+
   to {
     transform: translateX(-10vw);
   }
@@ -427,4 +441,41 @@ body {
 .neon-button:hover::after,
 .neon-button:focus::after {
   opacity: 1;
+}
+
+/* PAGE TITLE */
+
+.pageTitle {
+  width: 20%;
+  font-size: 1.1rem;
+  margin: 5em auto 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: var(--clr-neon) 0.2em solid;
+  border-radius: 3em;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+}
+
+/* PAGE INFORMATION */
+
+.pageInfo {
+  width: 70%;
+  margin: 25% auto;
+  padding: 10px;
+}
+
+.pageInfo p {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.pageInfo .box {
+  width: 100%;
+  padding: 50px;
+  background: #000000;
+  border-radius: 20px;
+  box-shadow: 0 0 10px -3px rgb(0, 0, 0);
+  opacity: 0.7;
 }
