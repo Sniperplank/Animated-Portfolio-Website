@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-    <script type="text/javascript" src="./Scripts/script.js"></script>
+    <script type="text/javascript" src="../Scripts/script.js"></script>
     <title>Eilaf Aljundi</title>
 </head>
 
@@ -30,29 +30,42 @@
     </div>
 
     <div class="homeButton" id="homeButton">
-        <a href="#" class="neon-button">Home</a>
+        <a href="../index.html" class="neon-button">Home</a>
     </div>
     <div class="projectsButton" id="projectsButton">
-        <a href="./Pages/Projects.html" class="neon-button">Projects</a>
+        <a href="./Projects.html" class="neon-button">Projects</a>
     </div>
     <div class="aboutButton" id="aboutButton">
-        <a href="./Pages/About.html" class="neon-button">About</a>
+        <a href="./About.html" class="neon-button">About</a>
     </div>
     <div class="contactButton" id="contactButton">
-        <a href="./Pages/Contact.html" class="neon-button">Contact</a>
+        <a href="#" class="neon-button">Contact</a>
     </div>
 
-    <div class="character" id="character"><img src="./Images/Walking Character CSS Only.svg"></div>
+    <div class="character" id="character"><img src="../Images/Walking Character CSS Only.svg"></div>
     <div class="wall" id="wall"></div>
 
     <div class="pageTitle" id="pageTitle">
-        <h1>Eilaf Aljundi</h1>
+        <h1>Contact Me</h1>
     </div>
 
     <div class="pageInfo" id="pageInfo">
         <div class="box" id="box">
-            <p>A developer and a student who loves making stuff, has made a few stuff, and is learning to make more stuff.</p>
-            <p>Check out my projects in the Projects page!</p>
+            <form action="">
+                <div class="form-parent" id="form-parent">
+                    <div class="name-email-div" id="name-email-div">
+                        <label for="name">Name:</label> 
+                        <input type="text" name="name" id="name" placeholder="Your Name"> 
+                        <label for="email">Email:</label> 
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="message-submit-div" id="message-submit-div">
+                        <label for="message">Message:</label> 
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea> 
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
