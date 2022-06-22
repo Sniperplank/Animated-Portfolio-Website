@@ -9,7 +9,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <script type="text/javascript" src="../Scripts/script.js"></script>
-    <title>Eilaf Aljundi</title>
+    <title>Contact - Eilaf Aljundi</title>
 </head>
 
 <body>
@@ -54,15 +54,23 @@
             <form action="">
                 <div class="form-parent" id="form-parent">
                     <div class="name-email-div" id="name-email-div">
-                        <label for="name">Name:</label> 
-                        <input type="text" name="name" id="name" placeholder="Your Name"> 
-                        <label for="email">Email:</label> 
-                        <input type="email" name="email" id="email" placeholder="Your Email">
+                        <div class="form-inputs">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-inputs">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
                     </div>
                     <div class="message-submit-div" id="message-submit-div">
-                        <label for="message">Message:</label> 
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea> 
-                        <input type="submit" value="Submit">
+                        <div class="form-inputs">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="form-inputs">
+                            <button class="form-btn">Send</button>
+                        </div>
                     </div>
                 </div>
             </form>
