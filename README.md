@@ -1,1 +1,1 @@
-﻿# Animated-Website *not finished*
+﻿# Animated-Website *(not finished)*
