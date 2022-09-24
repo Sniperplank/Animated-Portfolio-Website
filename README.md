@@ -1,3 +1,3 @@
-﻿# Animated Portfolio Website *(not finished)*
+﻿# Animated Portfolio Website *(In Development)*
 
-Preview: https://sniperplank.github.io/Animated-Website/
+Preview: https://sniperplank.github.io/Animated-Portfolio-Website/
