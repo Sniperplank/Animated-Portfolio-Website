@@ -17,11 +17,11 @@ async function removeCurtain() {
     document.getElementById("textOnCurtain-div").style.zIndex = "-2";
 }
 
-async function manageButtonsVisibility() {
-    await sleep(5200);
-    document.getElementById("projectsButton").style.visibility = "visible"
-    await sleep(5200);
-    document.getElementById("aboutButton").style.visibility = "visible"
-    await sleep(5200);
-    document.getElementById("contactButton").style.visibility = "visible"
-}
+// async function manageButtonsVisibility() {
+//     await sleep(5200);
+//     document.getElementById("projectsButton").style.visibility = "visible"
+//     await sleep(5200);
+//     document.getElementById("aboutButton").style.visibility = "visible"
+//     await sleep(5200);
+//     document.getElementById("contactButton").style.visibility = "visible"
+// }

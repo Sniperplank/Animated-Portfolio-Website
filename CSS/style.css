@@ -360,42 +360,25 @@ body {
 .homeButton {
   position: absolute;
   top: 30%;
-  animation: button-animation 33s linear infinite;
-  animation-delay: var(--movement-animation-delay);
+  left: 10%;
 }
 
 .projectsButton {
   position: absolute;
   top: 30%;
-  visibility: hidden;
-  animation: button-animation 33s linear infinite;
-  animation-delay: 5s;
+  left: 30%;
 }
 
 .aboutButton {
   position: absolute;
   top: 30%;
-  visibility: hidden;
-  animation: button-animation 33s linear infinite;
-  animation-delay: 10s;
+  left: 55%;
 }
 
 .contactButton {
   position: absolute;
   top: 30%;
-  visibility: hidden;
-  animation: button-animation 33s linear infinite;
-  animation-delay: 15s;
-}
-
-@keyframes button-animation {
-  from {
-    transform: translateX(100vw);
-  }
-
-  to {
-    transform: translateX(-10vw);
-  }
+  left: 80%;
 }
 
 .neon-button {
