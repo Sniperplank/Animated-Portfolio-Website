@@ -14,9 +14,27 @@ body {
   padding: 0;
   height: 100vh;
   color: var(--text-color);
-  overflow: hidden;
   font-family: 'Roboto Condensed', sans-serif;
+  background-color: #000000;
 }
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--clr-bg);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: var(--clr-neon);
+}
+
 
 [class*=curtain] {
   position: relative;
@@ -357,28 +375,41 @@ body {
 
 /* NAVIGATION BUTTONS */
 
-.homeButton {
+.navButtons {
   position: absolute;
+  display: flex;
   top: 30%;
-  left: 10%;
+  width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .navButtons {
+    position: absolute;
+    display: block;
+    top: 30%;
+  }
+}
+
+.homeButton {
+  position: relative;
+  margin: 0 30%;
+  margin-left: 40%;
 }
 
 .projectsButton {
-  position: absolute;
-  top: 30%;
-  left: 30%;
+  position: relative;
+  margin: 0 30%;
 }
 
 .aboutButton {
-  position: absolute;
-  top: 30%;
-  left: 55%;
+  position: relative;
+  margin: 0 30%;
 }
 
 .contactButton {
-  position: absolute;
-  top: 30%;
-  left: 80%;
+  position: relative;
+  margin: 0 30%;
+  margin-right: 0;
 }
 
 .neon-button {
@@ -438,12 +469,35 @@ body {
   box-shadow: 0 0 2em 0.5em var(--clr-neon);
 }
 
+@media only screen and (max-width: 600px) {
+  .pageTitle {
+    width: 50%;
+    font-size: 1.1rem;
+    margin: 5em auto 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: var(--clr-neon) 0.2em solid;
+    border-radius: 3em;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  }
+}
+
 /* PAGE INFORMATION */
 
 .pageInfo {
   width: 70%;
   margin: 25% auto;
   padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pageInfo {
+    width: 70%;
+    margin: 5%;
+    margin-top: 80%;
+    padding: 10px;
+  }
 }
 
 .pageInfo p {
@@ -455,7 +509,7 @@ body {
 .pageInfo .box {
   width: 100%;
   padding: 40px;
-  background: #000000;
+  background: rgba(5, 5, 5, 0.651);
   border-radius: 20px;
   box-shadow: 0 0 10px -3px rgb(0, 0, 0);
 }
@@ -556,24 +610,21 @@ body {
 
 /* PROJECTS SCROLLBAR */
 
-.projects-pageInfo::-webkit-scrollbar-track
-{
-	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: var(--clr-bg);
+.projects-pageInfo::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--clr-bg);
 }
 
-.projects-pageInfo::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: transparent;
+.projects-pageInfo::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
 }
 
-.projects-pageInfo::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: var(--clr-neon);
+.projects-pageInfo::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: var(--clr-neon);
 }
 
 .projects-pageInfo p {
