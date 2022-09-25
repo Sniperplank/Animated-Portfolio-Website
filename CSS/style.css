@@ -373,43 +373,56 @@ body {
   }
 }
 
-/* NAVIGATION BUTTONS */
-
-.navButtons {
-  position: absolute;
-  display: flex;
-  top: 30%;
-  width: auto;
-}
-
-@media only screen and (max-width: 600px) {
-  .navButtons {
-    position: absolute;
-    display: block;
-    top: 30%;
-  }
-}
+/*---------------------------------------------------- NAVIGATION BUTTONS -------------------------------------------------------------*/
 
 .homeButton {
-  position: relative;
-  margin: 0 30%;
-  margin-left: 40%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
 }
 
 .projectsButton {
-  position: relative;
-  margin: 0 30%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
 }
 
 .aboutButton {
-  position: relative;
-  margin: 0 30%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
 }
 
 .contactButton {
-  position: relative;
-  margin: 0 30%;
-  margin-right: 0;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+
+@media only screen and (max-width: 700px) {
+  .homeButton {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  
+  .projectsButton {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+  }
+  
+  .aboutButton {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  
+  .contactButton {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+  }
 }
 
 .neon-button {
@@ -455,7 +468,7 @@ body {
   opacity: 1;
 }
 
-/* PAGE TITLE */
+/* ------------------------------------------------------ PAGE TITLE ---------------------------------------------------*/
 
 .pageTitle {
   width: 20%;
