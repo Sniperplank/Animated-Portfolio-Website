@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="../Scripts/script.js"></script>
     <title>Contact - Eilaf Aljundi</title>
 </head>
@@ -51,7 +52,7 @@
 
     <div class="pageInfo" id="pageInfo">
         <div class="box" id="box">
-            <form action="">
+            <form action="https://formsubmit.co/9947f85f4a82308bfae07d5dc63d10ea" method="post">
                 <div class="form-parent" id="form-parent">
                     <div class="name-email-div" id="name-email-div">
                         <div class="form-inputs">
@@ -69,10 +70,14 @@
                             <textarea name="message" id="message" placeholder="Your Message"></textarea>
                         </div>
                         <div class="form-inputs">
-                            <button class="form-btn">Send</button>
+                            <button class="form-btn" type="submit">Send</button>
                         </div>
                     </div>
                 </div>
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Message from My site">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
             </form>
         </div>
     </div>
