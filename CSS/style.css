@@ -115,7 +115,7 @@ body {
 .textOnCurtain {
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 0.3vw rgb(20, 20, 20);
+  -webkit-text-stroke: 0.3vw rgb(56, 55, 55);
   text-transform: uppercase;
 }
 
@@ -127,10 +127,10 @@ body {
   left: 0;
   width: 0;
   height: 100%;
-  color: var(--text-on-curtain-color);
-  text-shadow: var(--text-on-curtain-color) 0 0 3vw;
+  color: var(--clr-neon);
+  text-shadow: var(--clr-neon) 0 0 3vw;
   -webkit-text-stroke: 0vw rgb(36, 36, 36);
-  border-right: 3px solid var(--text-on-curtain-color);
+  border-right: 3px solid var(--clr-neon);
   overflow: hidden;
   animation: text-on-curtain-animation 2.5s forwards;
 }
@@ -143,7 +143,7 @@ body {
   left: 0;
   width: 0;
   height: 30%;
-  background-color: var(--text-on-curtain-color);
+  background-color: var(--clr-neon);
   transform: perspective(1em) rotateX(40deg) scale(1, 1.2);
   filter: blur(0.125em);
   animation: text-on-curtain-animation 2.5s forwards;
@@ -379,24 +379,28 @@ body {
   position: absolute;
   top: 30%;
   left: 10%;
+  z-index: -6;
 }
 
 .projectsButton {
   position: absolute;
   top: 30%;
   left: 30%;
+  z-index: -6;
 }
 
 .aboutButton {
   position: absolute;
   top: 30%;
   left: 50%;
+  z-index: -6;
 }
 
 .contactButton {
   position: absolute;
   top: 30%;
   left: 70%;
+  z-index: -6;
 }
 
 @media only screen and (max-width: 700px) {
@@ -404,24 +408,28 @@ body {
     position: absolute;
     top: 30%;
     left: 10%;
+    z-index: -6;
   }
-  
+
   .projectsButton {
     position: absolute;
     top: 35%;
     left: 10%;
+    z-index: -6;
   }
-  
+
   .aboutButton {
     position: absolute;
     top: 40%;
     left: 10%;
+    z-index: -6;
   }
-  
+
   .contactButton {
     position: absolute;
     top: 45%;
     left: 10%;
+    z-index: -6;
   }
 }
 
@@ -471,6 +479,10 @@ body {
 /* ------------------------------------------------------ PAGE TITLE ---------------------------------------------------*/
 
 .pageTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 20%;
   font-size: 1.1rem;
   margin: 5em auto 0 auto;
@@ -480,10 +492,15 @@ body {
   border: var(--clr-neon) 0.2em solid;
   border-radius: 3em;
   box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  z-index: -6;
 }
 
 @media only screen and (max-width: 600px) {
   .pageTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 50%;
     font-size: 1.1rem;
     margin: 5em auto 0 auto;
@@ -493,23 +510,34 @@ body {
     border: var(--clr-neon) 0.2em solid;
     border-radius: 3em;
     box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    z-index: -6;
   }
 }
 
 /* PAGE INFORMATION */
 
 .pageInfo {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
   width: 70%;
   margin: 25% auto;
   padding: 10px;
+  z-index: -6;
 }
 
 @media only screen and (max-width: 600px) {
   .pageInfo {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
     width: 70%;
     margin: 5%;
     margin-top: 80%;
     padding: 10px;
+    z-index: -6;
   }
 }
 
